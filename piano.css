@@ -1,0 +1,130 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+#piano-body{
+    background-image:linear-gradient(120deg,#69ddb7,#b7e4df);
+    margin: 0px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align:top;
+    text-decoration-color: cornsilk;
+    text-emphasis-style:inherit;
+    font-size: 200%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+@media(max-width:998rem){
+.piano{
+    display: flex;
+}
+}
+@media(max-width:768rem){
+    .piano{
+        display: flex;
+    }
+}
+
+.key{
+    height: calc(var(--width) *4);
+    width: var(--width);
+    box-shadow: inset 0px 0px 5px black;
+}
+
+.White{
+    --width: 90px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.Black
+{
+    --width: 60px;
+    height: 240px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 1;
+    border: 1px solid #333;
+}
+
+.White.active{
+    background-color: #ccc;
+}
+
+.Black.active{
+    background-color: #333;
+}
+
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card>div{
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    
+    border-radius: 20px;
+    animation-name: myanim;
+    animation-duration: 3s;
+    animation-iteration-count: 5s;
+    
+}
+@keyframes myanim{
+    from{background-color:#dd1a1a ;}
+    to{background-color: coral;}
+    from{background-color:#66bb6a ;}
+    to{background-color:darkcyan;}
+    from{background-color:#ffca28 ;}
+    to{background-color:orange;}
+    from{background-color:#42a5f5 ;}
+    to{background-color:darkmagenta;}
+    from{background-color:#bdbdbd ;}
+    to{background-color: gray;}
+    from{background-color:#df2ae6 ;}
+    to{background-color:palevioletred;}
+}
+
+#green {
+    background-color: #66bb6a;
+    color: #66bb6a;
+}
+#amber {
+    background-color: #ffca28;
+    color: #ffca28;
+}
+#blue {
+    background-color: #42a5f5;
+    color: #42a5f5;
+}
+#gray {
+    background-color: #bdbdbd;
+    color: #bdbdbd;
+}
+
+#red {
+    background-color: #dd1a1a;
+    color: #e21c1c;
+}
+#dblue {
+    background-color: #2d0fb1;
+    color: #2d0fb1;
+}
+#purple {
+    background-color: #df2ae6;
+    color: #df2ae6;
+}
+
+#firebrick {
+    background-color: 	#dd8989;
+    color: #e49595;
+}
+
